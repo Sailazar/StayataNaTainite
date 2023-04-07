@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using StayataNaTainite.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<StayataNaTainiteContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("StayataNaTainiteContext")));
 
 var app = builder.Build();
 
