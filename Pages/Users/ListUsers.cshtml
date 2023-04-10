@@ -1,0 +1,30 @@
+﻿@page
+@model StayataNaTainite.Pages.ListUsersModel
+@{
+    ViewData["Title"] = "List users page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Temp code - list all users</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Username</th>
+                <th>PasswordHash</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Users)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Username</td>
+                    <td>@user.PasswordHash</td>
+                    <td>@user.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

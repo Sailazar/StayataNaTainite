@@ -10,6 +10,6 @@ namespace StayataNaTainite.Data
         {
         }
 
-        public DbSet<StayataNaTainite.Models.User> User { get; set; } = default!;
+        public DbSet<Models.User> User { get; set; } = default!;
     }
 }
