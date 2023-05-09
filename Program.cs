@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<StayataNaTainiteContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("StayataNaTainiteContext")));
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -24,6 +25,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapRazorPages();
 

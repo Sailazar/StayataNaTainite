@@ -1,0 +1,20 @@
+﻿@page
+@model StayataNaTainite.Pages.Users.LoginModel
+@{
+}
+
+<form method="post">
+    <div>
+        <label asp-for="User.Email">Email</label>
+        <input type="email" asp-for="User.Email" required />
+    </div>
+
+    <div>
+        <label asp-for="User.PasswordHash">Password</label>
+        <input type="password" asp-for="User.PasswordHash" required />
+    </div>
+
+    <div>
+        <input type="submit" value="Submit" />
+    </div>
+</form>
