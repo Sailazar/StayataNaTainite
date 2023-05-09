@@ -11,5 +11,6 @@ namespace StayataNaTainite.Data
         }
 
         public DbSet<Models.User> User { get; set; } = default!;
+        public DbSet<Models.Creation> Creation { get; set; } = default!;
     }
 }

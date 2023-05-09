@@ -1,0 +1,15 @@
+﻿@page
+@model StayataNaTainite.Pages.Creations.UploadModel
+@{
+}
+
+<form method="post">
+    <div>
+        <label asp-for="Creation.Title">Title</label>
+        <input asp-for="Creation.Title" required />
+    </div>
+
+    <div>
+        <input type="submit" value="Upload" />
+    </div>
+</form>
