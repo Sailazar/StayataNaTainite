@@ -7,9 +7,17 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+.navbar-nav > li {
+  padding-right: 34px;
+  padding-left: 72px;
+}
+
+
 a {
   color: #0077cc;
 }
+
+
 
 .btn-primary {
   color: #fff;
@@ -46,3 +54,4 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
+
